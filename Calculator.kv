@@ -1,0 +1,131 @@
+MainWindow
+
+<MainWindow>:
+    orientation: "vertical"
+
+    TextInput:
+        id: textinput
+        size_hint: 1,.2
+        font_size: 50
+        text: ""
+    GridLayout:
+        rows: 5
+        cols: 4
+
+        Button:
+            text: "+"
+            background_color: 1,0,0,1
+            font_size: 30
+            on_press: root.button_press('+')
+
+        Button:
+            text: "-"
+            background_color: 1,0,0,1
+            font_size: 30
+            on_press: root.button_press('-')
+
+        Button:
+            text: "*"
+            background_color: 1,0,0,1
+            font_size: 30
+            on_press: root.button_press('*')
+        Button:
+            text: "/"
+            background_color: 1,0,0,1
+            font_size: 30
+            on_press: root.button_press('/')
+
+        Button:
+            text: "1"
+            background_color: 1,1,0,1
+            font_size: 30
+            on_press: root.button_press(1)
+
+        Button:
+            text: "2"
+            background_color: 1,1,0,1
+            font_size: 30
+            on_press: root.button_press(2)
+
+        Button:
+            text: "3"
+            background_color: 1,1,0,1
+            font_size: 30
+            on_press: root.button_press(3)
+
+        Button:
+            text: "4"
+            background_color: 1,1,0,1
+            font_size: 30
+            on_press: root.button_press(4)
+
+        Button:
+            text: "5"
+            background_color: 1,1,0,1
+            font_size: 30
+            on_press: root.button_press(5)
+
+        Button:
+            text: "6"
+            background_color: 1,1,0,1
+            font_size: 30
+            on_press: root.button_press(6)
+
+        Button:
+            text: "7"
+            background_color: 1,1,0,1
+            font_size: 30
+            on_press: root.button_press(7)
+
+        Button:
+            text: "8"
+            background_color: 1,1,0,1
+            font_size: 30
+            on_press: root.button_press(8)
+
+        Button:
+            text: "9"
+            background_color: 1,1,0,1
+            font_size: 30
+            on_press: root.button_press(9)
+
+        Button:
+            text: "C"
+            background_color: 0,1,0,1
+            font_size: 30
+            on_press: root.clear()
+
+        Button:
+            text: "="
+            background_color: 0,0,1,1
+            font_size: 30
+            on_press: root.evaluate()
+
+        Button:
+            text: "."
+            background_color: 1,0,0,1
+            font_size: 30
+
+        Button:
+            text: "0"
+            background_color: 1,1,0,1
+            font_size: 30
+            on_press: root.button_press(0)
+
+        Button:
+            text: "%"
+            background_color: 1,1,0,1
+            font_size: 30
+            on_press: root.percentage()
+
+        Button:
+            text: "Close"
+            background_color: .89,0,1,1
+            font_size: 30
+            on_press: exit()
+
+        Button:
+            text: "<"
+            background_color: 1,0,0,1
+            font_size: 30
+            on_press: root.backspace()
