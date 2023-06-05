@@ -24,15 +24,17 @@ class MainWindow(BoxLayout):
         # print(back)
 
     def ce(self):
-         self.ids.textinput.text = "0"
+        self.ids.textinput.text = "0"
 
     def percentage(self):
-        self.ids.textinput.text = str(int(eval(str(self.ids.textinput.text)))/100)
+        self.ids.textinput.text = str(
+            int(eval(str(self.ids.textinput.text)))/100)
         # print(per)
 
 
 class CalculatorApp(App):
     pass
+
 
 if __name__ == '__main__':
     CalculatorApp().run()
